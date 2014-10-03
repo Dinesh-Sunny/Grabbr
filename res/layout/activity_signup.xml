@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signupparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.dineshsunny.grabbr.SignupActivity"
+    tools:ignore="ButtonStyle" >
+
+    <ImageView
+        android:id="@+id/confromation_resend_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_username_edittext"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/grabbr_image"
+        android:src="@drawable/ic_action_call" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confromation_resend_circle"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/grabbr_image"
+        android:src="@drawable/ic_action_mail" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Status"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/circle" 
+        android:layout_marginBottom="15dp">
+    </RelativeLayout>
+     <EditText
+        android:id="@+id/signup_username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/confirmation_done_circle"
+        android:layout_alignLeft="@+id/signup_phoneno_edittext"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="@string/login_username_hint"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" 
+           />
+
+    <EditText
+        android:id="@+id/signup_password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/confirmation_done_circle"
+        android:ems="10"
+        android:hint="@string/signup_password_edittext_hint"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/grabbr_image"
+        android:src="@drawable/ic_action_star" />
+
+    <EditText
+        android:id="@+id/signup_phoneno_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/confromation_resend_circle"
+        android:layout_alignLeft="@+id/signup_email_edittext"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="@string/signup_phoneno_edittext"
+        android:inputType="phone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+   
+
+    <EditText
+        android:id="@+id/signup_email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/signup_password_edittext"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="@string/signup_email_edittext_hint"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/signup_password_edittext"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/signup_done_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:text="@string/signup_done_btn_text"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/signup_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:text="@string/signup_cancel_btn_text"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/confirmation_done_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confromation_resend_circle"
+        android:layout_below="@+id/RelativeLayout_Status"
+        android:contentDescription="@string/grabbr_image"
+        android:src="@drawable/ic_action_user" />
+
+</RelativeLayout>
